@@ -4,6 +4,12 @@ A laravel artisan command to generate trait quickly.
 
 ## Install
 
+Via Composer
+
+```
+composer require rukhsar/traitcommand
+```
+
 In your `config/app.php` file, add the following to the providers array:
 
 ```php
