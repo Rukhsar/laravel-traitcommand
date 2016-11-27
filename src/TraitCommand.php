@@ -87,7 +87,7 @@ class TraitCommand extends Command
 
     private function setInputsFromArtisan()
     {
-        // sets inputs from the artisan command line arguments
+
         $this->inputs = $this->argument();
 
         $this->folderPath = 'app/' . $this->inputs['TraitFolder'];
