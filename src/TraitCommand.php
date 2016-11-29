@@ -104,7 +104,15 @@ class TraitCommand extends Command
 
         $comment = "// Trait created using make:trait command \n\n";
 
-        $nameSpace = "namespace App\\" . $this->inputs['TraitFolder'] . ';' . "\n\n";
+        if ($this->inputs['TraitFolder'] == "")
+        {
+            $nameSpace = "namespace App" . ';' . "\n\n";
+
+        } else
+
+        {
+            $nameSpace = "namespace App\\" . $this->inputs['TraitFolder'] . ';' . "\n\n";
+        }
 
         $traitDeclaration = "trait " . $this->inputs['TraitName'] . "\n" . "{\n\n}";
 
