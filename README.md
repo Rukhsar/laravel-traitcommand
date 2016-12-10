@@ -28,7 +28,9 @@ To use this command, supply it with two arguments, the first is the name of the 
 
 For example:
 
+```
 php artisan make:trait ModelTrait Traits
+```
 
 This would create a directory named Traits in your app directory with a php file named ModelTrait.php.
 
